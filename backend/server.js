@@ -10,8 +10,8 @@ const JWT_SECRET = process.env.JWT_SECRET || 'fallback-secret-for-dev';
 // Middleware
 app.use(cors({
   origin: [
-    'http://localhost:5173',
-    'https://audio-library-frontend.vercel.app' // Вы добавите его позже
+    'http://localhost:5173', // для локальной разработки
+    'https://audio-library-one.vercel.app' // ЗАМЕНИТЕ на ваш реальный URL Vercel
   ],
   credentials: true
 }));
