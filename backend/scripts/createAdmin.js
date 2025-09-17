@@ -11,7 +11,7 @@ async function createAdmin() {
     const existingAdmin = await User.findOne({ 
       where: { 
         [Op.or]: [
-          { email: 'admin@example.com' },
+          { email: 'admin@gmail.com' },
           { username: 'admin' }
         ] 
       } 
@@ -27,7 +27,7 @@ async function createAdmin() {
 
     const adminUser = await User.create({
       username: 'admin',
-      email: 'admin@example.com',
+      email: 'admin@gmail.com',
       password: hashedPassword,
       role: 'admin'
     });
