@@ -1,8 +1,8 @@
+const { Op } = require('sequelize');
 const express = require('express');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const User = require('../models/User');
-const { Op } = require('sequelize');
 
 const router = express.Router();
 const JWT_SECRET = process.env.JWT_SECRET || 'fallback-secret-for-dev';
