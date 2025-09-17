@@ -11,7 +11,7 @@ const JWT_SECRET = process.env.JWT_SECRET || 'fallback-secret-for-dev';
 app.use(cors({
   origin: [
     'http://localhost:5173',
-    'https://ваш-домен-на-vercel.vercel.app' // Вы добавите его позже
+    'https://audio-library-frontend.vercel.app' // Вы добавите его позже
   ],
   credentials: true
 }));
