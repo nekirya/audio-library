@@ -10,8 +10,8 @@ const JWT_SECRET = process.env.JWT_SECRET || 'fallback-secret-for-dev';
 // Middleware
 app.use(cors({
   origin: [
-    'http://localhost:5173', // для локальной разработки
-    'https://your-frontend-domain.vercel.app' // ЗАМЕНИТЕ на ваш будущий домен Vercel
+    'http://localhost:5173',
+    'https://ваш-домен-на-vercel.vercel.app' // Вы добавите его позже
   ],
   credentials: true
 }));
